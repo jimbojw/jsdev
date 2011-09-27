@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Advanced Fundamentals of JavaScript Development</title> 
+<!--
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+-->
+<link rel="stylesheet" type="text/css" href="lib/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.css" />
+<link rel="stylesheet" type="text/css" href="css/hexgame.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">.tile { background-image: url('image/sprite.png'); }</style>
+<!--
+<script src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+<script src="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+-->
+<script src="lib/jquery-1.6.2.min.js"></script>
+<script src="lib/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="welcome">
+
+  <div data-role="header">
+    <h1>jimbojw.com/jsdev</h1>
+  </div><!-- /header -->
+
+  <div data-role="content">
+
+    <h1>Advanced Fundamentals of JavaScript Development</h1>
+
+    <div class="figure avatar">
+    <figure>
+        <p><img src="image/jim-r-wilson.jpg" alt="Jim R. Wilson (jimbojw)" /></p>
+        <figcaption><span class="caption">Jim R. Wilson (jimbojw)</span></figcaption>
+    </figure>
+    </div>
+    <div class="figure qrcode">
+    <figure>
+        <p><img src="image/qr-code.png" alt="jimbojw.com/jsdev" /></p>
+        <figcaption><span class="caption">jimbojw.com/jsdev</span></figcaption>
+    </figure>
+    </div>
+    
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h1>jimbojw.com/jsdev</h1>
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="source">
+
+  <div data-role="content">  
+  
+    <h2>source</h2>
+    
+    <a href="http://github.com/jimbojw/jsdev" data-role="button" data-icon="home" data-theme="b">fork me on github</a>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="agenda">
+
+  <div data-role="content">  
+     
+    <h2>agenda</h2>
+    
+    <h3>meta</h3>
+    <h3>page flow</h3>
+    <h3>major devisions</h3>
+    <h3>tools</h3>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="chat">
+
+  <div data-role="content">  
+     
+    <h2>chat</h2>
+
+    <div data-role="fieldcontain">
+      <label for="chatuser">Your name:</label>
+      <input type="text" name="chatuser" id="chatuser" value="" />
+    </div>
+    <div id="chatstuff">
+      <div data-role="fieldcontain">
+        <label for="chatlog">Chat log:</label>
+        <textarea cols="40" rows="8" name="chatlog" id="chatlog" class="chatlog"></textarea>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="messagebox">Your message:</label>
+        <input type="text" name="messagebox" id="messagebox" value="" />
+        <input type="button" id="messagesubmit" data-role="button" data-icon="check" data-iconpos="notext" data-theme="a" />
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="game">
+
+  <div data-role="content">  
+     
+    <h2>game</h2>
+    
+    <h3>Score: <span id="hexscore">0</span></h3>
+    
+    <div class="hexouter" id="hexouter">
+      <div class="hexinner" id="hexinner">
+      </div>
+    </div>
+
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="libs">
+
+  <div data-role="content">  
+  
+    <h2>libs</h2>
+
+    <ul>
+      <li>
+        <p>
+          <a href="http://jquery.com/">jQuery</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="http://jquerymobile.com/">jQuery Mobile</a>        </p>
+      </li>
+      <li>
+        <p>
+          <a href="http://tildejs.com/">tilde.js</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="http://github.com/jimbojw/hexlib">hexlib</a>
+        </p>
+      </li>
+    </ul>
+
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="thanks">
+
+  <div data-role="content">  
+     
+    <h2>thanks!</h2>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<!--
+<script src="//service.tilde.local/tilde.js"></script>
+-->
+<script src="//service.tildejs.com/tilde.js"></script>
+<script src="lib/hex.min.js"></script>
+<script src="js/hexgame.core.js"></script>
+<script src="js/hexgame.colorby.group.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
+
