@@ -12,6 +12,10 @@
 }
 
 /* figures */
+.figure img {
+  max-width: 100%;
+  border: 2px solid white;
+}
 .figure .caption {
   display: block;
   text-align: center;
@@ -19,6 +23,7 @@
 
 /* welcome page */
 .slide-welcome .figure img {
+  border: none;
   display: block;
   margin: auto;
 }
@@ -28,15 +33,20 @@
 .slide-welcome .qrcode {
   float: right;
 }
-.slide-welcome .ui-btn {
-  clear: both;
-}
 @media screen and (max-width: 700px) {
   .slide-welcome .figure {
     float: none;
   }
 }
 
+/* source */
+.fork-me {
+  height: 200px;
+  font-size: 3.5em;
+}
+.fork-me .ui-btn-inner {
+  padding-top: 1.1em;
+}
 /* chat */
 .chatlog {
   min-height: 200px;

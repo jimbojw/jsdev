@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Advanced Fundamentals of JavaScript Development</title> 
 <!--
-<link rel="stylesheet" href="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
--->
 <link rel="stylesheet" type="text/css" href="lib/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.css" />
+-->
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
 <link rel="stylesheet" type="text/css" href="css/hexgame.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">.tile { background-image: url('image/sprite.png'); }</style>
 <!--
-<script src="//code.jquery.com/jquery-1.6.2.min.js"></script>
-<script src="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
--->
 <script src="lib/jquery-1.6.2.min.js"></script>
 <script src="lib/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.js"></script>
+-->
+<script src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+<script src="//code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
 </head> 
 <body> 
 
@@ -57,7 +57,7 @@
   
     <h2>source</h2>
     
-    <a href="http://github.com/jimbojw/jsdev" data-role="button" data-icon="home" data-theme="b">fork me on github</a>
+    <a href="http://github.com/jimbojw/jsdev" class="fork-me" data-role="button" data-theme="b">fork me on github</a>
 
   </div><!-- /content -->
 
@@ -69,10 +69,14 @@
      
     <h2>agenda</h2>
     
-    <h3>meta</h3>
-    <h3>page flow</h3>
-    <h3>major devisions</h3>
-    <h3>tools</h3>
+    <ul>
+      <li><h3>meta</h3></li>
+      <li><h3>web request basics</h3></li>
+      <li><h3>anatomy of a page</h3></li>
+      <li><h3>tooling for every occasion</h3></li>
+      <li><h3>class dismissed</h3></li>
+      <li><h3>questions</h3></li>
+    </ul>
 
   </div><!-- /content -->
 
@@ -122,11 +126,335 @@
 
 </div><!-- /page -->
 
+<div data-role="page" id="basics">
+
+  <div data-role="content">  
+     
+    <h1>basics</h1>
+    
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="browsers">
+
+  <div data-role="content">  
+  
+    <h2>browsers</h2>
+
+    <ul>
+      <li><a href="http://www.google.com/chrome">Chrome</a></li>
+      <li><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+      <li><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">Internet Explorer</a></li>
+    </ul>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="pageanatomy-1">
+
+  <div data-role="content">  
+  
+    <h2>anatomy of a page (1/5)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/page-anatomy-1.jpg" alt="anatomy of a page 1/5" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="pageanatomy-2">
+
+  <div data-role="content">  
+  
+    <h2>anatomy of a page (2/5)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/page-anatomy-2.jpg" alt="anatomy of a page 2/5" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="pageanatomy-3">
+
+  <div data-role="content">  
+  
+    <h2>anatomy of a page (3/5)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/page-anatomy-3.jpg" alt="anatomy of a page 3/5" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="pageanatomy-4">
+
+  <div data-role="content">  
+  
+    <h2>anatomy of a page (4/5)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/page-anatomy-4.jpg" alt="anatomy of a page 4/5" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="pageanatomy-5">
+
+  <div data-role="content">  
+  
+    <h2>anatomy of a page (5/5)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/page-anatomy-5.jpg" alt="anatomy of a page 5/5" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="firebug">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://getfirebug.com/">firebug</a></h2>
+    
+    <p>(and <a href="https://addons.mozilla.org/en-US/firefox/addon/firecookie/">Firecookie</a>)</p>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/firebug-1.png" alt="firebug screenshot" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="webdevtoolbar">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://chrispederick.com/work/web-developer/">web developer toolbar</a></h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/web-developer-toolbar-1.png" alt="web developer toolbar" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="chromedevtools">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://code.google.com/chrome/devtools/docs/overview.html">chrome dev tools</a></h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/chrome-dev-tools-1.png" alt="chrome dev tools" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="iedevtools">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://msdn.microsoft.com/en-us/library/dd565622(v=VS.85).aspx">ie developer tools</a></h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/ie-dev-tools-1.jpg" alt="ie dev tools" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="network">
+
+  <div data-role="content">  
+  
+    <h1>network debugging</h1>
+    
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="webrequest-1">
+
+  <div data-role="content">  
+  
+    <h2>web request (1/3)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/web-request-1.jpg" alt="web request 1/3" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="webrequest-2">
+
+  <div data-role="content">  
+  
+    <h2>web request (2/3)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/web-request-2.jpg" alt="web request 2/3" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="webrequest-3">
+
+  <div data-role="content">  
+  
+    <h2>web request (3/3)</h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/web-request-3.jpg" alt="web request 3/3" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="tamperdata">
+
+  <div data-role="content">  
+  
+    <h2><a href="https://addons.mozilla.org/en-US/firefox/addon/tamper-data/">tamper data</a></h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/tamper-data-1.png" alt="tamper data" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="fiddler">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://www.fiddler2.com/fiddler2/">fiddler</a></h2>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/fiddler-1.jpg" alt="fiddler" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="editors">
+
+  <div data-role="content">  
+  
+    <h1>editors</h1>
+    
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="notepad">
+
+  <div data-role="content">  
+  
+    <h2><a href="http://notepad-plus-plus.org/">notepad++</a></h2>
+    
+    <p>(windows only)</p>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/notepad-1.png" alt="notepad" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="textmate">
+
+  <div data-role="content">  
+  
+    <h2><a href="">TextMate</a></h2>
+    
+    <p>(mac only)</p>
+
+    <div class="figure">
+    <figure>
+        <p><img src="image/textmate-1.jpg" alt="textmate" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="aptana">
+
+  <div data-role="content">  
+  
+    <h2><a href="">Aptana</a></h2>
+    
+    <div class="figure">
+    <figure>
+        <p><img src="image/aptana-1.jpg" alt="aptana" /></p>
+    </figure>
+    </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
 <div data-role="page" id="libs">
 
   <div data-role="content">  
   
-    <h2>libs</h2>
+    <h2>libraries used in this presentation</h2>
 
     <ul>
       <li>
